@@ -20,11 +20,11 @@
 parameter 없는 경우
 ```json
 {
-	BTC_KRW:종가, 
-	ETH_KRW:종가, 
-	EOS_KRW:종가, 
-	BCH_KRW:종가, 
-	XRP_KRW:종가
+	'BTC_KRW':'종가',
+	'ETH_KRW':'종가', 
+	'EOS_KRW':'종가', 
+	'BCH_KRW':'종가', 
+	'XRP_KRW':'종가'
 }
 ```
 
@@ -33,7 +33,7 @@ parameter 없는 경우
 parameter있는 경우
 ```json
 {
-	BTC_KRW:종가, 
+	'BTC_KRW':'종가'
 }
 ```
 
@@ -47,7 +47,95 @@ http://localhost:8080/api/v1/data/currency
 
 ### 응답
 ```json
-{"status":"success","data":{"BTC_KRW":{"bithumb":{"originPair":"BTCKRW","last":7471000.0},"coinone":{"originPair":"BTCKRW","last":7503000.0},"korbit":{"originPair":"BTCKRW","last":7524500.0},"bitfinex":null},"LTC_KRW":{"bithumb":{"originPair":"LTCKRW","last":107800.0},"coinone":{"originPair":"LTCKRW","last":108050.0},"korbit":null,"bitfinex":null},"EOS_KRW":{"bithumb":{"originPair":"EOSKRW","last":11600.0},"coinone":{"originPair":"EOSKRW","last":11640.0},"korbit":null,"bitfinex":null},"BCH_KRW":{"bithumb":{"originPair":"BCHKRW","last":973000.0},"coinone":{"originPair":"BCHKRW","last":976500.0},"korbit":{"originPair":"BCHKRW","last":980000.0},"bitfinex":null},"XRP_KRW":{"bithumb":{"originPair":"XRPKRW","last":594.0},"coinone":{"originPair":"XRPKRW","last":597.0},"korbit":{"originPair":"XRPKRW","last":600.0},"bitfinex":null},"ETH_KRW":{"bithumb":{"originPair":"ETHKRW","last":584000.0},"coinone":{"originPair":"ETHKRW","last":587000.0},"korbit":{"originPair":"ETHKRW","last":586600.0},"bitfinex":null}}}
+{
+	"status": "success",
+	"data": {
+		"BTC_KRW": {
+			"bithumb": {
+				"originPair": "BTCKRW",
+				"last": 7471000.0
+			},
+			"coinone": {
+				"originPair": "BTCKRW",
+				"last": 7503000.0
+			},
+			"korbit": {
+				"originPair": "BTCKRW",
+				"last": 7524500.0
+			},
+			"bitfinex": null
+		},
+		"LTC_KRW": {
+			"bithumb": {
+				"originPair": "LTCKRW",
+				"last": 107800.0
+			},
+			"coinone": {
+				"originPair": "LTCKRW",
+				"last": 108050.0
+			},
+			"korbit": null,
+			"bitfinex": null
+		},
+		"EOS_KRW": {
+			"bithumb": {
+				"originPair": "EOSKRW",
+				"last": 11600.0
+			},
+			"coinone": {
+				"originPair": "EOSKRW",
+				"last": 11640.0
+			},
+			"korbit": null,
+			"bitfinex": null
+		},
+		"BCH_KRW": {
+			"bithumb": {
+				"originPair": "BCHKRW",
+				"last": 973000.0
+			},
+			"coinone": {
+				"originPair": "BCHKRW",
+				"last": 976500.0
+			},
+			"korbit": {
+				"originPair": "BCHKRW",
+				"last": 980000.0
+			},
+			"bitfinex": null
+		},
+		"XRP_KRW": {
+			"bithumb": {
+				"originPair": "XRPKRW",
+				"last": 594.0
+			},
+			"coinone": {
+				"originPair": "XRPKRW",
+				"last": 597.0
+			},
+			"korbit": {
+				"originPair": "XRPKRW",
+				"last": 600.0
+			},
+			"bitfinex": null
+		},
+		"ETH_KRW": {
+			"bithumb": {
+				"originPair": "ETHKRW",
+				"last": 584000.0
+			},
+			"coinone": {
+				"originPair": "ETHKRW",
+				"last": 587000.0
+			},
+			"korbit": {
+				"originPair": "ETHKRW",
+				"last": 586600.0
+			},
+			"bitfinex": null
+		}
+	}
+}
 ```
     
 
@@ -57,6 +145,20 @@ http://localhost:8080/api/v1/data/currency
 
 ### 응답
 ```json
-  {"status":"success","data":{"bithumb":{"originPair":"LTCKRW","last":107800.0},"coinone":{"originPair":"LTCKRW","last":108050.0},"korbit":null,"bitfinex":null}}
+  {
+	"status": "success",
+	"data": {
+		"bithumb": {
+			"originPair": "LTCKRW",
+			"last": 107800.0
+		},
+		"coinone": {
+			"originPair": "LTCKRW",
+			"last": 108050.0
+		},
+		"korbit": null,
+		"bitfinex": null
+	}
+}
 ```
     
