@@ -20,11 +20,11 @@
 parameter 없는 경우
 ```json
 {
-	'BTC_KRW':'종가',
-	'ETH_KRW':'종가', 
-	'EOS_KRW':'종가', 
-	'BCH_KRW':'종가', 
-	'XRP_KRW':'종가'
+	"BTC_KRW":"종가",
+	"ETH_KRW":"종가", 
+	"EOS_KRW":"종가", 
+	"BCH_KRW":"종가", 
+	"XRP_KRW":"종가"
 }
 ```
 
@@ -33,7 +33,7 @@ parameter 없는 경우
 parameter있는 경우
 ```json
 {
-	'BTC_KRW':'종가'
+	"BTC_KRW":"종가"
 }
 ```
 
